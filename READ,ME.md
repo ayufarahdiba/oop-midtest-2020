@@ -1,6 +1,4 @@
-========================
-BUILD OUTPUT DESCRIPTION
-========================
+
 
 Ketika Anda membangun proyek aplikasi Java yang memiliki kelas utama, IDE
 secara otomatis menyalin semua JAR
