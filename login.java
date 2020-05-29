@@ -10,29 +10,13 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author karjono
+ * @author
  */
 public class login extends javax.swing.JFrame {
 
- private void loginActionPerformed(java.awt.event.ActionEvent evt) {
-// TODO add your handling code here:
-if (vusername.getText().equals("admin")) {
-if (vpassword.getText().equals("admin")) {
-// Bila Login Sukses Maka Masuk Menu Utama
-new BankATM().show();
-this.dispose(); }
-else {
-// Bila Login Gagal Maka Ulangi Login
-JOptionPane.showMessageDialog(rootPane, "<error> Password Salah, Silahkan Coba Lagi");
-vpassword.setText("");
-vpassword.requestFocus(); }}
-else {
-JOptionPane.showMessageDialog(rootPane, "<error> Username, Silahkan Coba Lagi");
-vusername.setText("");
-vpassword.setText("");
-vusername.requestFocus();
-}
-}
+    /**
+     * Creates new form login
+     */
     public login() {
         initComponents();
     }
@@ -81,14 +65,14 @@ vusername.requestFocus();
         jLabel3.setText("Silahkan Login Disini");
 
         jLabel4.setFont(new java.awt.Font("Noto Sans", 0, 18)); // NOI18N
-        jLabel4.setForeground(java.awt.Color.red);
+        jLabel4.setForeground(java.awt.Color.cyan);
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Selamat datang");
 
         jLabel5.setFont(new java.awt.Font("Noto Sans", 0, 18)); // NOI18N
-        jLabel5.setForeground(java.awt.Color.red);
+        jLabel5.setForeground(java.awt.Color.cyan);
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("ATM Bank Bersama");
+        jLabel5.setText("ATM Bank Bersatu");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -147,9 +131,6 @@ vusername.requestFocus();
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jLabel1, jLabel2, vpassword, vusername});
-
-        jLabel4.getAccessibleContext().setAccessibleName("Selamat Datang");
-        jLabel5.getAccessibleContext().setAccessibleName("ATM Bank Bersama");
 
         pack();
     }// </editor-fold>                        
